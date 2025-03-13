@@ -1,0 +1,26 @@
+Sandbox_FR = {
+    Sandbox_Injuries = "Soins Réalistes des Blessures",
+    Sandbox_Injuries.DynamicEffectsEnabled = "Cicatrisation Dynamique",
+    Sandbox_Injuries.Fracture = "Fractures",
+    Sandbox_Injuries.FractureInitialMultiplier = "Fractures : Durée Initiale", Sandbox_Injuries.FractureLimitMultiplier = "Fractures : Durée Maximale", Sandbox_Injuries.SplintInefficiencyMultiplier = "Fractures : Multiplicateur d'Inefficacité des Attelles",
+    Sandbox_Injuries.ComfreyDurationMultiplier = "Fractures : Multiplicateur de Durée des Cataplasmes de Consoude",
+    Sandbox_Injuries.Burn = "Brûlures",
+    Sandbox_Injuries.BurnInitialMultiplier = "Brûlures : Durée Initiale", Sandbox_Injuries.BurnLimitMultiplier = "Brûlures : Durée Maximale", Sandbox_Injuries.Scratch = "Égratignures",
+    Sandbox_Injuries.ScratchInitialMultiplier = "Égratignures : Durée Initiale", Sandbox_Injuries.ScratchLimitMultiplier = "Égratignures : Durée Maximale",
+    Sandbox_Injuries.Cut = "Coupures",
+    Sandbox_Injuries.CutInitialMultiplier = "Coupures : Durée Initiale", Sandbox_Injuries.CutLimitMultiplier = "Coupures : Durée Maximale",
+    Sandbox_Injuries.Bite = "Morsures",
+    Sandbox_Injuries.BiteInitialMultiplier = "Morsures : Durée Initiale", Sandbox_Injuries.BiteLimitMultiplier = "Morsures : Durée Maximale",
+    
+    Sandbox_Injuries.DynamicEffectsEnabled_tooltip = "La vitesse de cicatrisation variera en fonction de l’état du personnage.",
+    Sandbox_Injuries.FractureInitialMultiplier_tooltip = "Définit le temps de cicatrisation initial pour les fractures (par exemple, 2 = deux fois plus de temps).", Sandbox_Injuries.FractureLimitMultiplier_tooltip = "Définit le temps maximal de cicatrisation possible pour les fractures (par exemple, 1,5 = durée initiale * 1,5).", Sandbox_Injuries.SplintInefficiencyMultiplier_tooltip = "Réduit l’efficacité des attelles (plus notable avec une meilleure compétence en premiers secours).", Sandbox_Injuries.ComfreyDurationMultiplier_tooltip = "Augmente la durée des cataplasmes de consoude.",
+    
+    Sandbox_Injuries.BurnInitialMultiplier_tooltip = "Définit le temps de cicatrisation initial pour les brûlures.",
+    Sandbox_Injuries.BurnLimitMultiplier_tooltip = "Définit le temps maximal de cicatrisation possible pour les brûlures.",
+    Sandbox_Injuries.ScratchInitialMultiplier_tooltip = "Définit le temps de cicatrisation initial pour les égratignures.",
+    Sandbox_Injuries.ScratchLimitMultiplier_tooltip = "Définit le temps maximal de cicatrisation possible pour les égratignures.",
+    Sandbox_Injuries.CutInitialMultiplier_tooltip = "Définit le temps de cicatrisation initial pour les coupures.",
+    Sandbox_Injuries.CutLimitMultiplier_tooltip = "Définit le temps maximal de cicatrisation possible pour les coupures.",
+    Sandbox_Injuries.BiteInitialMultiplier_tooltip = "Définit le temps de cicatrisation initial pour les morsures.",
+    Sandbox_Injuries.BiteLimitMultiplier_tooltip = "Définit le temps maximal de cicatrisation possible pour les morsures."
+}

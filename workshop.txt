@@ -1,0 +1,40 @@
+version=1
+id=3352389981
+title=Realistic Injury Healing
+description=Dynamic healing of wounds and fractures, close to real life. Now wounds heal longer and the character's condition affects the healing speed. Works in MP. Sandbox settings are present. Works with existing saves. The mod affects only the wounds specified in the sandbox settings
+description=
+description=Translations:
+description=
+description=EN
+description=RU
+description=KO: [url=https://steamcommunity.com/profiles/76561198331661434]KimLeon[/url]
+description=TR: [url=https://steamcommunity.com/profiles/76561199081913276]AnyyOnes[/url]
+description=PL: [url=https://steamcommunity.com/profiles/76561199198399806]Wiktorius[/url]
+description=PTBR: [url=https://steamcommunity.com/profiles/76561199062290230]thecarvalhogamer[/url]
+description=IT: [url=https://steamcommunity.com/profiles/76561198117365919]Pakal82[/url]
+description=ES: [url=https://steamcommunity.com/profiles/76561198017017176]creedpitbull[/url]
+description=FR: [url=https://steamcommunity.com/profiles/76561198127483569]Kuro[/url]
+description=
+description=tags:
+description=Injury
+description=Injuries
+description=Dynamic
+description=Scratch
+description=Cut
+description=Bite
+description=Fracture
+description=Burn
+description=Heal
+description=Healing
+description=Wounds
+description=
+description=[img]https://i.imgur.com/fVVaDCS.gif[/img]
+description=
+description=[h1] Want to support me? [/h1]
+description=[url=https://ko-fi.com/P5P1120PBD][img]https://storage.ko-fi.com/cdn/kofi3.png?v=3[/img][/url]
+description=[code]All money will go to mods development, thank you :3[/code]
+description=
+description=Workshop ID: 3352389981
+description=Mod ID: Yummy_RIH
+tags=Build 41;Build 42;Balance;Misc;Multiplayer;Realistic
+visibility=public

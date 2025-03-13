@@ -1,0 +1,26 @@
+Sandbox_ES = {
+    Sandbox_Injuries = "Curación Realista de Lesiones",
+    Sandbox_Injuries.DynamicEffectsEnabled = "Curación Dinámica",
+    Sandbox_Injuries.Fracture = "Fracturas",
+    Sandbox_Injuries.FractureInitialMultiplier = "Fracturas: Duración Inicial", Sandbox_Injuries.FractureLimitMultiplier = "Fracturas: Duración Máxima", Sandbox_Injuries.SplintInefficiencyMultiplier = "Fracturas: Multiplicador de Ineficiencia de la Férula",
+    Sandbox_Injuries.ComfreyDurationMultiplier = "Fracturas: Multiplicador de Duración del Cataplasma de Consuelda",
+    Sandbox_Injuries.Burn = "Quemaduras",
+    Sandbox_Injuries.BurnInitialMultiplier = "Quemaduras: Duración Inicial", Sandbox_Injuries.BurnLimitMultiplier = "Quemaduras: Duración Máxima", Sandbox_Injuries.Scratch = "Arañazos",
+    Sandbox_Injuries.ScratchInitialMultiplier = "Arañazos: Duración Inicial", Sandbox_Injuries.ScratchLimitMultiplier = "Arañazos: Duración Máxima",
+    Sandbox_Injuries.Cut = "Cortes",
+    Sandbox_Injuries.CutInitialMultiplier = "Cortes: Duración Inicial", Sandbox_Injuries.CutLimitMultiplier = "Cortes: Duración Máxima",
+    Sandbox_Injuries.Bite = "Mordeduras",
+    Sandbox_Injuries.BiteInitialMultiplier = "Mordeduras: Duración Inicial", Sandbox_Injuries.BiteLimitMultiplier = "Mordeduras: Duración Máxima",
+    
+    Sandbox_Injuries.DynamicEffectsEnabled_tooltip = "La velocidad de curación cambiará según la condición del personaje.",
+    Sandbox_Injuries.FractureInitialMultiplier_tooltip = "Establece el tiempo inicial de curación para fracturas (por ejemplo, 2 = el doble de tiempo).", Sandbox_Injuries.FractureLimitMultiplier_tooltip = "Establece el tiempo máximo posible de curación para fracturas (por ejemplo, 1.5 = duración inicial * 1.5).", Sandbox_Injuries.SplintInefficiencyMultiplier_tooltip = "Reduce la efectividad de las férulas (más notable con mayor habilidad en primeros auxilios).", Sandbox_Injuries.ComfreyDurationMultiplier_tooltip = "Aumenta la duración del cataplasma de consuelda.",
+    
+    Sandbox_Injuries.BurnInitialMultiplier_tooltip = "Establece el tiempo inicial de curación para quemaduras.",
+    Sandbox_Injuries.BurnLimitMultiplier_tooltip = "Establece el tiempo máximo posible de curación para quemaduras.",
+    Sandbox_Injuries.ScratchInitialMultiplier_tooltip = "Establece el tiempo inicial de curación para arañazos.",
+    Sandbox_Injuries.ScratchLimitMultiplier_tooltip = "Establece el tiempo máximo posible de curación para arañazos.",
+    Sandbox_Injuries.CutInitialMultiplier_tooltip = "Establece el tiempo inicial de curación para cortes.",
+    Sandbox_Injuries.CutLimitMultiplier_tooltip = "Establece el tiempo máximo posible de curación para cortes.",
+    Sandbox_Injuries.BiteInitialMultiplier_tooltip = "Establece el tiempo inicial de curación para mordeduras.",
+    Sandbox_Injuries.BiteLimitMultiplier_tooltip = "Establece el tiempo máximo posible de curación para mordeduras."
+}
