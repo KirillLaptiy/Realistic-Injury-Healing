@@ -13,6 +13,7 @@ local Injuries = {}
 Injuries.OnInjury = {}
 Injuries.EveryOneMinute = {}
 Injuries.OnGameStart = {}
+Injuries.OnCreatePlayer = {}
 
 Injuries.OnInjury.Fracture = function(bodyPart, fractureEffect, effectMultiplier)
     if (bodyPart:getGarlicFactor() or bodyPart:getPlantainFactor()) > 0 then
@@ -74,22 +75,20 @@ Injuries.EveryOneMinute.applyInjuryEffects = function()
                 if injuryTime > 0 then
                     hasInjury = true
 
-                    if not modData[bodyPartType].initialTime[injury] then
+                    if not modData[bodyPartType]["initialTime"][injury] then
                         local getInjuryTime = bodyPart["get" .. injury .. "Time"]
                         local setInjuryTime = bodyPart["set" .. injury .. "Time"]
 
                         setInjuryTime(bodyPart, injuryTime * SandboxVars.Injuries[injury .. "InitialMultiplier"])
 
-                        modData[bodyPartType].initialTime[injury] = getInjuryTime(bodyPart)
-
-                        print(modData[bodyPartType].initialTime[injury])
+                        modData[bodyPartType]["initialTime"][injury] = getInjuryTime(bodyPart)
                     end
 
                     if dynamicEffectsEnabled then
                         local injuryEffect = Injuries.sandboxEffect
 
                         local injuryTimeLimitReached = injuryTime >
-                            modData[bodyPartType].initialTime[injury] * SandboxVars.Injuries
+                            modData[bodyPartType]["initialTime"][injury] * SandboxVars.Injuries
                             [injury .. "LimitMultiplier"]
 
                         if not injuryTimeLimitReached then
@@ -115,8 +114,8 @@ Injuries.EveryOneMinute.applyInjuryEffects = function()
                             modData.weaponEffect = 0
                         end
                     end
-                elseif modData[bodyPartType].initialTime[injury] then
-                    modData[bodyPartType].initialTime[injury] = {}
+                elseif modData[bodyPartType] and modData[bodyPartType]["initialTime"] and modData[bodyPartType]["initialTime"][injury] then
+                    modData[bodyPartType]["initialTime"][injury] = nil
                 end
             end
         end
@@ -288,7 +287,7 @@ Injuries.OnGameStart.setSandoxEffect = function()
     Injuries.sandboxEffect = sandboxEffect
 end
 
-Injuries.OnGameStart.setStartedModData = function()
+Injuries.OnCreatePlayer.setStartedModData = function()
     local modData = getPlayer():getModData()
 
     local bodyDamage = getPlayer():getBodyDamage()
@@ -298,10 +297,8 @@ Injuries.OnGameStart.setStartedModData = function()
         local bodyPart = bodyParts:get(i)
         local bodyPartType = tostring(bodyPart:getType())
 
-        print("some of god")
-
         if not modData[bodyPartType] then modData[bodyPartType] = {} end
-        if not modData[bodyPartType].initialTime then modData[bodyPartType].initialTime = {} end
+        if not modData[bodyPartType]["initialTime"] then modData[bodyPartType]["initialTime"] = {} end
     end
 
     if not modData.weaponEffect then modData.weaponEffect = 0 end
@@ -319,8 +316,9 @@ end
 
 Events.OnGameStart.Add(function()
     Injuries.OnGameStart.setSandoxEffect()
-    Injuries.OnGameStart.setStartedModData()
     Injuries.OnGameStart.setDayLengthEffect()
 
     Events.EveryOneMinute.Add(Injuries.EveryOneMinute.applyInjuryEffects)
 end)
+
+Events.OnCreatePlayer.Add(Injuries.OnCreatePlayer.setStartedModData)
